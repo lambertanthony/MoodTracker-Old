@@ -1,5 +1,7 @@
 package com.anthony.project.moodtracker;
- public class Mood {
+
+
+public class Mood {
 
       /**
          * Mood  en int
@@ -36,13 +38,6 @@ package com.anthony.project.moodtracker;
      }
 
 
-     @Override
-     public String toString() {
-         return "Mood{" +
-                 "moodState=" + moodState +
-                 ", comment='" + comment + '\'' +
-                 '}';
-     }
  }
 
 
