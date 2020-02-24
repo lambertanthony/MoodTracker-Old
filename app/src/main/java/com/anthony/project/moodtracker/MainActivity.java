@@ -10,8 +10,11 @@ import android.widget.TextView;
 
 import com.jakewharton.threetenabp.AndroidThreeTen;
 
+import org.threeten.bp.LocalDate;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeMap;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Button addMoodButton;
     TextView text_view;
     String comment;
-
+    TreeMap<LocalDate, Mood> moods = new TreeMap<>();
 
     public static final int[] tableauImg = new int[]{
             R.drawable.smiley_sad,
