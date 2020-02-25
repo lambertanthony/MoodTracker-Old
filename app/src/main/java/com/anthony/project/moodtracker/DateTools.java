@@ -21,14 +21,13 @@ public class DateTools {
 
     public static List<LocalDate> getDatesBetween() {
         List<LocalDate> datesInRange = new ArrayList<>();
+        LocalDate currentTime = LocalDate.now();;
 
-
-        LocalDate startDate = getBeforeWeek()  ;
-        LocalDate endDate = LocalDate.now();;
-        while (!startDate.isBefore(endDate)) {
-            datesInRange.add(startDate);
-            startDate = startDate.plusDays(1);
+        for (LocalDate indexDate = getBeforeWeek(); indexDate.isBefore(currentTime); indexDate = indexDate.plusDays(1))
+        {
+            datesInRange.add(indexDate);
         }
+
         return datesInRange;
     }
 
